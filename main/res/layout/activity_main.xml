@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/profile_rv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></android.support.v7.widget.RecyclerView>
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Today:13:01:2017"
+        android:layout_gravity="center"
+        android:textSize="20sp"
+        android:padding="15dp"
+        android:textColor="#fff"
+        android:background="#000"/> <!--red color for background of text view-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="cursive"
+        android:paddingTop="20dp"
+
+        android:text="Sess1:(08:50-09:10)Sess2:(10:50-11:10),Sess3:(13:50-14:10)"/>
+
+    <TextClock
+        android:id="@+id/simpleTextClock"
+        android:layout_width="77dp"
+        android:layout_height="45dp"
+        android:layout_gravity="center"
+        android:paddingTop="20dp"
+        android:textColor="#f00"
+        android:textSize="20sp"
+        android:visibility="visible" />
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_gravity="center"
+            android:text="00:"
+            android:textSize="20sp"
+            android:id="@+id/hh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_gravity="center"
+            android:text="00:"
+            android:id="@+id/mm"
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_gravity="center"
+            android:text="00"
+            android:id="@+id/ss"
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+
+
+    <Button
+        android:id="@+id/mark"
+        android:paddingTop="20dp"
+        android:textSize="15sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textStyle="bold|italic"
+        android:layout_gravity="center"
+        android:text="MARK ATTENDANCE" />
+
+
+    <Button
+        android:id="@+id/view"
+        android:paddingTop="20dp"
+        android:textSize="15sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textStyle="bold|italic"
+        android:layout_gravity="center"
+        android:onClick="checkAttendance"
+        android:text="View Attendance" />
+
+
+</LinearLayout>
